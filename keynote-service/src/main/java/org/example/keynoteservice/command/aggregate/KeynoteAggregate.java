@@ -1,7 +1,7 @@
 package org.example.keynoteservice.command.aggregate;
 
-import com.conference.keynote.command.commands.*;
-import com.conference.keynote.common.events.*;
+import org.example.keynoteservice.command.commands.*;
+import org.example.keynoteservice.common.events.*;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.CommandHandler;
@@ -79,4 +79,4 @@ public class KeynoteAggregate {
         this.deleted = true;
         log.info("Keynote deleted: {}", keynoteId);
     }
-}`}
+}
